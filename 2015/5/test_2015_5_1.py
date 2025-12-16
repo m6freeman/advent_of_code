@@ -20,7 +20,7 @@ def part_one(input_path: str) -> int:
 
     answer: int = 0
     for line in input.splitlines():
-        if is_nice(line):
+        if is_nice(line.lower()):
             answer += 1
 
     return answer
